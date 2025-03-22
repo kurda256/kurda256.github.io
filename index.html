@@ -3,48 +3,20 @@
 		<title>Hi, I'm Kairos</title>
 		
 		<style>
-			div#title {
-				grid-gap: 20px;
-				
-				img {
-					width: calc(100% - 48px);
-					border-radius: 20px;
-					width: 100%;
-				}
-				
-				div#titleintroduction {
-					h1 {
-						font-size: 3.25rem;
-						margin-top: 0;
-						margin-bottom: 1rem;
-						display: inline;
-						padding: 6px 12px;
-						background-color: white;
-						color: black;
-						box-decoration-break: clone;
-						line-height: 1.6;
-						border-radius: 20px;
-					}
-				}
-				
-				div#titlelinks {
-					p {
-						margin: 0;
-					}
-				}
-			}
-			@media (max-width: 800px) {
-				div#title {
-					grid-template-columns: repeat(1, 1fr) !important;
-				}
-			}
 			
 			div#links {
 				text-align: center;
-				a {margin: 0px 6px;}
-				border-top: 3px dashed white;
-				border-bottom: 3px dashed white;
+				border-width: 3px;
+				border-style: dashed none dashed none;
+				border-color: white;
 				padding: 30px 0;
+				a {
+					margin: 0px 4px;
+					padding: 6px 12px;
+					border: 3px solid white;
+					border-radius: 12px;
+					text-decoration: none;
+				}
 			}
 			
 			div#pfp {
@@ -53,17 +25,6 @@
 					border: 3px solid white;
 					padding: 8px 12px;
 					border-radius: 20px;
-				}
-				
-				p {
-					line-height: 1.5;
-					margin-top: 6px;
-				}
-				
-				img {
-					width: calc(100% - 48px);
-					border-radius: 20px;
-					width: 100%;
 				}
 			}
 		</style>
@@ -75,13 +36,14 @@
 	
 	<body>
 		<div class="grid cols-2 cols-sm-1" id="title">
-			<img src="3@0.5x.jpg" />
+			<img src="4.png" />
 			
-			<div id="titleintroduction">
-				<h1>Hi, I'm Kairos</h1>
+			<div>
+				<h1 class="emphasis">Hi, I'm Kairos</h1>
 				<p>And <span class="dropcap">I'm</span> a queer agender geek who is trying to make a place forthemselves on The Internet.</p>
 				<p>Currently this site is very barebones and only contains a few links as well as my profile picture history. Check the links out if you wanna chat!</p>
 				<p>I'm also neurodivergent, a stoner, and swing the way of men.</p>
+				<p>I will <em>eventually</em> put things on this site.</p>
 			</div>
 		</div>
 		
@@ -94,18 +56,23 @@
 		
 		<div class="grid bottom" id="pfp">
 			<div class="col-6 col-xs-12"><h2 id="pfptitle">Profile Picture Archive</h2></div>
-			<p class="col-6 col-xs-12" style="margin: 0" id="pfptitle"><span class="dropcap">As</span> someone who doesn't identify with any specific style (or gender) well, I change my PFP to reflect whatever I fuck with at any given moment. I have a <a href="profile.png">permalink</a> which always has the most up to date picture.</p>
-			<div class="col-4 col-lg-3 col-sm-6">
+			<p class="col-6 col-xs-12" style="margin: 0" id="pfptitle"><span class="dropcap">As</span> someone who doesn't identify with any specific style (or gender) well, I change my PFP to reflect whatever I fuck with at any given moment. I have a <a href="profile.jpg">permalink</a> which always has the most up to date picture.</p>
+			<div class="col-4 col-sm-6">
+				<img src="4.png" />
+				<p><span class="dropcap">4</span> Wednesdays</p>
+				<p><a href="4.png" class="button">Download</a></p>
+			</div>
+			<div class="col-4 col-sm-6">
 				<img src="3@0.5x.jpg" />
 				<p><span class="dropcap">3</span> Magic8</p>
 				<p><a href="3.jpg" class="button">Download</a></p>
 			</div>
-			<div class="col-4 col-lg-3 col-sm-6">
+			<div class="col-4 col-sm-6">
 				<img src="2@0.5x.png" />
 				<p><span class="dropcap">2</span> Summer Boy</p>
 				<p><a href="2.png" class="button">Download</a></p>
 			</div>
-			<div class="col-4 col-lg-3 col-sm-6">
+			<div class="col-4 col-sm-6">
 				<img src="1@0.5x.png" />
 				<p><span class="dropcap">1</span> Painted Woman</p>
 				<p><a href="1.png" class="button">Download</a></p>

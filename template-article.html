@@ -1,0 +1,166 @@
+<html>
+	<head>
+		<title>Article Template</title>
+		
+		<style>
+			div#metadata {
+				div#tags {
+					margin-bottom: 16px;
+					margin-top: 16px;
+					width: 100%;
+					display: flow-root;
+					
+					ul {
+						border: 3px solid white;
+						border-radius: 5px;
+						overflow: hidden;
+					    list-style: none;
+						
+						float: left;
+					    margin: 0;
+						margin-right: 10px;
+					    padding: 0;
+						
+						
+						
+						font-size: 0;
+						
+						li {
+							display: inline;
+							padding: 12px 10px;
+							border-right: 3px solid white;
+							line-height: 1.5;
+							
+							a {
+								text-decoration: none;
+								text-transform: uppercase;
+							}
+						}
+						
+						li#date {
+							background-color: white;
+							color: black;
+							* {color: black;}
+						}
+						
+						li:last-child {
+							border-right: none;
+						}
+					}
+				}
+				
+				div#author {
+					display: flex;
+					align-items: center;
+					margin-top: 20px;
+					img {
+						float: left;
+						height: 75px;
+						width: 75px;
+						border-radius: 10px;
+					}
+					
+					p {
+						display: inline-block;
+						font-size: 1.75em;
+						margin: 0;
+						margin-left: 15px;
+						line-height: 1
+					}
+				}
+			}
+			
+			div#image {
+				div.placeholder {
+					aspect-ratio: 2;
+					background-color: #202030;
+					border-radius: 20px;
+				}
+				
+				p {
+					text-align: center;
+					font-size: 16px;
+				}
+			}
+			
+			h2 {
+				border-top: 3px solid white;
+				padding-top: 10px;
+			}
+		</style>
+		
+		<meta name="viewport" content="width=device-width, initial-scale=0.75">
+		<link type="text/css" rel="stylesheet" href="style.css">
+		<link type="text/css" rel="stylesheet" href="grid.css">
+	</head>
+	
+	<body>
+		<div id="metadata">
+			<div id="tags">
+				<ul>
+					<li id="date">1970-01-01</li>
+				</ul>
+				<ul>
+					<li><a href="tag1">Tag1</a></li>
+					<li><a href="tag2">Tag2</a></li>
+					<li><a href="tag3">Tag3</a></li>
+				</ul>
+			</div>
+			<h1 class="emphasis">Put Article Headline Here</h1>
+			<div id="author">
+				<img src="profile.jpg">
+				<p>Kairos Urda</p>
+			</div>
+			
+		</div>
+		
+		<div id="image">
+			<div class="placeholder"></div>
+			<p>This is a description of the image</p>
+		</div>
+		
+		<div id="body">
+			<p><span class="dropcap">Lorem</span> ispsum dolor sit amet, consectetur adipiscing elit. Vestibulum fringilla laoreet enim, non placerat nibh dignissim vitae. Phasellus vel ornare metus. Morbi rutrum lectus quis elementum lacinia. Mauris dictum hendrerit urna in interdum. Aliquam dapibus dictum ipsum, ac pretium eros fermentum vitae. Nullam hendrerit felis mollis velit rhoncus feugiat vitae ut mauris. Aliquam ultricies auctor erat, quis tincidunt mi pellentesque vel. Nunc ac porta tortor. Vivamus ligula justo, aliquam ac diam non, elementum laoreet odio. Nulla imperdiet arcu id lorem scelerisque lobortis. Vivamus dapibus ornare nunc sit amet lacinia. In sodales neque non orci fermentum auctor.</p>
+			<ul>
+				<li>List item one</li>
+				<li>List item two</li>
+				<li>List item three</li>
+			</ul>
+			<p> eget sapien vehicula nunc volutpat tempor. Aenean bibendum mattis risus. Sed sit amet tellus in dui sollicitudin volutpat. Pellentesque eget ligula at lectus sollicitudin vulputate nec ut ante. Aliquam erat volutpat. Curabitur egestas est vel tortor ultricies semper. Vestibulum vitae aliquam mi. Aenean at pretium eros. In hac habitasse platea dictumst. Integer ut libero sodales, dignissim ligula nec, dapibus lorem. Ut aliquet nibh quis urna efficitur, et sollicitudin ante ultricies. Phasellus a sapien viverra, vulputate nulla non, posuere ligula. Etiam volutpat ullamcorper orci, sit amet blandit quam maximus ut.</p>
+			<hr />
+			<p><span class="dropcap">Aliquam</span> orci turpis, tincidunt quis quam ut, luctus dictum lacus. Curabitur a auctor ligula. Duis id nulla massa. Fusce vestibulum id felis eget posuere. Nulla turpis lorem, pretium id nunc et, posuere faucibus diam. Duis rhoncus bibendum dolor a placerat. Aliquam efficitur lectus vel varius tincidunt.</p>
+			<ol>
+				<li>One</li>
+				<li>Two</li>
+				<li>Three</li>
+			</ol>
+			<p>Donec eu ultrices leo. Phasellus eleifend elit a nibh rutrum rhoncus. In finibus ipsum eu egestas ultrices. Mauris ornare justo vel neque dictum pellentesque. Nulla libero lacus, finibus vel ipsum quis, rhoncus fringilla ante. Vivamus eu ullamcorper tellus. Vestibulum orci orci, efficitur a eros nec, gravida venenatis magna. Donec sit amet pharetra tortor, quis ornare arcu. Phasellus velit ipsum, dictum at bibendum in, sagittis eget metus. Mauris viverra urna nec diam iaculis efficitur. In sit amet tincidunt dolor. Maecenas vel imperdiet eros, ut sodales elit.</p>
+			<h2>Second Heading</h2>
+			<p><span class="dropcap">Mauris</span> nec purus aliquet, interdum sapien vitae, aliquam eros. Aliquam dapibus massa at tortor fringilla dignissim. Maecenas cursus libero ac aliquet euismod. Maecenas consectetur dapibus aliquam. Donec auctor elit nec lorem bibendum efficitur ut sit amet eros. Maecenas sed pretium mi, in tristique odio. Praesent quis sollicitudin turpis.</p>
+			<div class="grid cols-2">
+			<pre>div#author {
+	display: flex;
+	align-items: center;
+	margin-top: 20px;
+	img {
+		float: left;
+		height: 80px;
+		width: 80px;
+		border-radius: 20px;
+	}
+	p {
+		display: inline-block;
+		font-size: 2em;
+		margin-left: 15px;
+		line-height: 1
+	}
+}</pre>
+<img src="1.png" />
+</div>
+			<h3>Third Heading</h3>
+			<p> Nunc auctor lorem sit amet neque ullamcorper feugiat. Nam semper lorem tempor, fermentum ex in, aliquam augue. Morbi justo orci, ultricies at auctor sit amet, suscipit non urna. In nec elit laoreet, pretium nisl ut, fringilla sem. Vestibulum malesuada nec elit vitae rhoncus. Sed vulputate neque ut nibh dapibus, non dictum massa eleifend. In maximus dui tortor, sed hendrerit neque interdum vel. Pellentesque luctus leo maximus faucibus mollis. </p>
+		</div>
+		
+		
+	</body>
+</html>
